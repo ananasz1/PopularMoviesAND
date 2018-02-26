@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.movie_main );
 
-        // restore the saved "sortby" setting
+        // restore the saved "sortby" settings
         if (savedInstanceState !=null){
             mSelectedSortOption = savedInstanceState.getInt("mSelectedSortOption");
         }
