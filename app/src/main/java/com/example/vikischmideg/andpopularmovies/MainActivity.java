@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.movie_main );
 
-        // restore the selected "sortby" setting
+        // restore the saved "sortby" setting
         if (savedInstanceState !=null){
             mSelectedSortOption = savedInstanceState.getInt("mSelectedSortOption");
         }
@@ -134,12 +134,6 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
         super.onSaveInstanceState(outState);
         outState.putInt("mSelectedSortOption", mSelectedSortOption);
     }
-
-    //@Override
-    //protected void onRestoreInstanceState(Bundle savedInstanceState) {
-    //    super.onRestoreInstanceState(savedInstanceState);
-    //    mSelectedSortOption = savedInstanceState.getInt("mSelectedSortOption");
-    //}
 
     public class MoviesAsyncTask extends AsyncTask<Void, Void, List<Movie>> {
         @Override
