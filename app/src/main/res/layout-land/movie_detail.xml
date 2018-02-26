@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="horizontal"
+    tools:context="com.example.vikischmideg.andpopularmovies.MovieDetailActivity">
+
+
+    <LinearLayout
+        style="@style/linear_land"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/movie_image"
+            style="@style/movie_image" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/linear_land"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/movie_title"
+            style="@style/title_text" />
+
+
+        <LinearLayout style="@style/rating_linear">
+
+            <android.support.v7.widget.AppCompatRatingBar
+                android:id="@+id/vote_ratingbar"
+                style="@style/rating_bar" />
+
+            <TextView
+                android:id="@+id/vote_text"
+                style="@style/rating_text"
+                tools:text="8/10" />
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/released_linear">
+
+            <TextView
+                android:id="@+id/release_label"
+                style="@style/released_text"
+                android:text="@string/text_label_released" />
+
+            <TextView
+                android:id="@+id/release_date"
+                style="@style/released_date" />
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/overview"
+                style="@style/overview_text" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

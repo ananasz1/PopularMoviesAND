@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Popular Movies AND</string>
+
+    <string name="error_message">Sorry!\nSomething went wrong.\nPlease click on the text to refresh.</string>
+
+    <!--Menu-->
+    <string name="sort_by">Sort by</string>
+    <string-array name="movie_sorting_options_array">
+        <item>Most popular</item>
+        <item>Highest rated</item>
+    </string-array>
+
+    <string name="text_label_released">Released:\ </string>
+    <string name="content_description_movie_poster">Movie Poster</string>
+    <string name="movie_detail_intent_key">movieDetailIntentKey</string>
+
+</resources>
