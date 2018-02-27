@@ -81,8 +81,7 @@ public class Movie implements Parcelable {
         Uri baseUri = Uri.parse(MOVIE_POSTER_URL);
         Uri.Builder imageUri = baseUri.buildUpon();
         imageUri.appendEncodedPath(posterPath);
-        String imageUriString = imageUri.toString();
-        return imageUriString;
+        return imageUri.toString();
     }
 
     public String getOriginalTitle() {
@@ -105,8 +104,7 @@ public class Movie implements Parcelable {
         Uri baseUri = Uri.parse(MOVIE_BACKDROP_URL);
         Uri.Builder backdropUri = baseUri.buildUpon();
         backdropUri.appendEncodedPath(backdropPath);
-        String backdropUriString = backdropUri.toString();
-        return backdropUriString;
+        return backdropUri.toString();
     }
 
     public String getReleaseDate() {
